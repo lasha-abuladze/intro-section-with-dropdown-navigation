@@ -1,10 +1,11 @@
 
+.dark-background {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(21, 21, 21, 0.7);
+    position: fixed;
 
-.main-page{
-    position: relative;
-    overflow: hidden;
-
-    height: 200vh;
+    z-index: 1;
 }
 
 header {
@@ -20,14 +21,52 @@ header {
 nav {
     width: 240px;
     height: 100vh;
-    background-color: aqua;
+    background-color: #FFFFFF;
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0px;
 
     transform: translateX(100%);
+
+    padding: 78px 24px;
+    box-sizing: border-box;
+
+    z-index: 3;
 }
+
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.a-arrows{
+    max-width: fit-content;
+    
+    display: flex;
+    gap: 17px;
+}
+
+.a-display-flex {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.dropdown-nav {
+    max-width: fit-content;
+    padding: 26px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
 
 .btn {
     padding: 0px;
@@ -35,6 +74,8 @@ nav {
 
     background: none;
     border: none;
+
+    z-index: 2;
 }
 
 .close-navigation {
@@ -74,4 +115,10 @@ nav {
     100% {
         transform: translateX(100%);
     }
+}
+
+
+
+.display-none {
+    display: none;
 }
