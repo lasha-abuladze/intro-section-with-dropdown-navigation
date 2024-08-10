@@ -67,6 +67,8 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+
 }
 
 
@@ -172,6 +174,14 @@ p {
 
     margin-top: 16px;
     cursor: pointer;
+    
+    transition: all 0.3s;
+}
+
+.learn-more-btn:hover {
+    background-color: #FAFAFA;
+    border: 1px solid #151515;
+    color: #151515;
 }
 
 .client-logos {
@@ -190,18 +200,165 @@ p {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
+.hero-desktop {
+    display: none;
+}
 
 
 .display-none {
     display: none;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1230px) {
+/*     
+    body {
+        background-color: red;
+    } */
+
+    header {
+        max-width: 1440px;
+        height: 42px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        padding: 24px 40px 0px 24px;
+        box-sizing: border-box;
+    }
+    
+
+    nav {
+        width: 100%;
+        height: 100%;
+        /* background-color: red; */
+        position: inherit;
+        display: flex;
+        align-items: center;
+        
+        transform: translateX(0%);
+    
+        padding: 0px;
+        padding-left: 65px;
+        box-sizing: border-box;
+    
+        z-index: 3;
+    }
+
+    .main-navigation {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .li-dropdown {
+        position: relative;
+    }
+
+    .dropdown-nav {
+        position: absolute;
+        box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        background-color: #fff;
+
+        gap: 25px;
+    }
+
+    .drop-feature {
+        left: -40px;
+        bottom: -200px;
+    }
+
+    .drop-company {
+        width: 116px;
+        padding-left: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .btn-menu {
+        display: none;
+    }
+
+    .close-navigation {
+        display: none;
+    }
+
+
+    main {
+        max-width: 1145px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 125px;
+        margin-top: 67px;
+    }
+
+    .about-app {
+        text-align: left;
+        order: 1;
+        margin-top: 0px;
+        padding: 0px;
+        margin-top: 104px;
+    }
+
+    .hero-img {
+        max-width: 485px;
+        order: 2;
+    }
+
+
+    .hero-mobile {
+        display: none;
+    }
+    
+    .hero-desktop {
+        display: block;
+        width: 100%;
+    }
+
+
+
+
+
+    h1 {
+        font-size: 80px;
+    }
+
+    p {
+        font-size: 18px;
+        max-width: 445px;
+        margin-top: 48px;
+    }
+
+    .learn-more-btn {
+        width: 163px;
+        height: 56px;
+
+        font-size: 18px;
+
+        margin-top: 50px;
+    }
+
+    .client-logo-desktop {
+        display: block;
+    }
+
+    .client-logo-mobile {
+        display: none;
+    }
+    
 }
